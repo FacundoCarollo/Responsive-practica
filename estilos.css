@@ -1,0 +1,262 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+width: 100%;
+    
+   
+height:  60px;
+background-color: black;
+;
+
+
+
+
+}
+
+
+.container-header{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.logo-title{
+   
+    display: flex;
+  
+}
+
+.logo-title img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.logo-title h1{
+    width: 100% ;
+ 
+font-size: 20px;
+font-weight: 100;
+margin-left: 10px;
+margin-top: 20px;
+color: white;
+}
+
+.icon-menu-1{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    font-size: 28px;
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .logo-title h1{
+        width: 100% ;
+      
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: white;
+    }
+}
+
+
+
+/* Portada */
+
+.container-portada{
+    width: 100%;
+  
+ 
+    height: 45em;
+    background: url(img/we.png) no-repeat;
+    background-size: 200%;
+    animation: movimiento 10s infinite linear alternate;
+}
+
+@media screen and (max-width: 1000px){
+.container-portada{
+    width: 100%;
+  
+  border: 1px solid red;
+    height: 300px;
+    background: url(img/we.png) no-repeat;
+    background-size: 200%;
+    animation: movimiento 10s infinite linear alternate;
+    transition: 500ms ease; 
+    
+}
+
+
+
+
+
+@keyframes movimiento{
+    
+    from{
+background-position: bottom right;
+    }to{
+background-position:  top left;
+}
+
+
+
+}
+
+    
+}
+
+
+@keyframes movimiento{
+    
+    from{
+background-position: bottom right;
+    }to{
+background-position:  top left;
+}
+
+}
+
+.container-datails{
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    margin:auto;
+   
+}
+
+.capa-gradient{
+    max-width: 100%;
+    width: 100%;
+    height: 45em;
+    position: fixed;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.6;
+}
+
+
+.datails{
+   
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    color: white;
+    border: 1px solid green;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    margin-left: 10px;
+    color: white;
+    transition: all 300ms ;
+    
+}
+
+.datails button:hover{
+    background: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 1000px){
+
+
+ .capa-gradient{
+    max-width: 100%;
+    width: 100%;
+    height: 12.5em;
+    
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.6;
+}
+
+
+.datails{
+   
+    width: 70%;
+    max-width: 100%;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    color: white;
+    border: 1px solid green;
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 11px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+
+
+}
+
+.datails button:hover{
+    background: white;
+    color: black;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+
+ p{
+    margin-bottom: 10px;
+}
+
+      
+ }
+
+
+ 
+
+
+ 
+
+
